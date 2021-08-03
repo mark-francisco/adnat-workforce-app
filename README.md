@@ -1,24 +1,40 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requirements:
 
-Things you may want to cover:
+```
+Ruby 3.0.0 and Rails 6.1.3
+```
 
-* Ruby version
+## Instructions:
 
-* System dependencies
+### Install Ruby gems:
 
-* Configuration
+```
+bundle install
+```
 
-* Database creation
+### Start server:
 
-* Database initialization
+```
+rails s
+```
 
-* How to run the test suite
+### Navigate to Rails app in browser. Go to this URL:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+http://localhost:3000/
+```
 
-* Deployment instructions
+### Navigate to Vue app in browser. Go to this URL:
 
-* ...
+```
+http://localhost:8080/
+```
+
+### Log in:
+
+```
+email: test@example.com
+password: password
+```
