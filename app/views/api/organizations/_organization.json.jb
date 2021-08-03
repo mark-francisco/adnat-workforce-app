@@ -1,0 +1,5 @@
+{
+  :id => organization.id,
+  :name => organization.name,
+  :hourly_rate => organization.hourly_rate,
+}
