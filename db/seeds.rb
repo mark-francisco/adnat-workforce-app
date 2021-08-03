@@ -1,7 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# organizations = Organization.create([:name => "workforce.com", :hourly_rate => 40],[:name => "pringles", :hourly_rate => 25])
+
+# users = User.create([
+#   { :organization_id => organizations.first.id, :name => "rafael nadal" :email_address => "rafa@example.com", :password_digest => "password" },
+#   { :name => "alison wonderland", :email_address => "alison@example.com", :password_digest => "password" },
+# ])
+
+# shift1 = Shift.create(:user_id => users.first.id, :start => Time.zone.parse('2021-08-01 10:00'), :finish => Time.zone.parse('2021-08-01 6:00'), :break_length => 60)
