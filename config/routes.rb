@@ -24,7 +24,7 @@ Rails.application.routes.draw do
     get "/shifts" => "shifts#index"
     get "/shifts/:id" => "shifts#show"
     post "/shifts" => "shifts#create"
-    # patch "/shifts/:id" => "shifts#update"
-    # delete "/shifts/:id" => "shifts#destroy"
+    patch "/shifts/:id" => "shifts#update"
+    delete "/shifts/:id" => "shifts#destroy"
   end
 end

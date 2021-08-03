@@ -1,0 +1,7 @@
+{
+  :id => user.id,
+  :organization_id => user.organization_id,
+  :name => user.name,
+  :email_address => user.email_address,
+  :password_digest => user.password_digest,
+}
