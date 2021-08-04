@@ -30,13 +30,31 @@ rails db:seed
 rails s
 ```
 
+#### Note: if your default Rails port is not 3000, use this command instead:
+
+```
+rails s -p 3000
+```
+
 ### Verify that the Rails app is running by going to this URL:
 
 ```
 http://localhost:3000/
 ```
 
-### Navigate to Vue app in browser by going to this URL:
+### Start Vue server. Go to the Vue project's directory in the terminal and run:
+
+```
+npm run serve
+```
+
+#### Note: if your default Vue port is not 8080, use this command instead:
+
+```
+npm run serve -- --port 8080
+```
+
+### Navigate to the Vue app in the browser by going to this URL:
 
 ```
 http://localhost:8080/
