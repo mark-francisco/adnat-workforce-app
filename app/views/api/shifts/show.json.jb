@@ -1,0 +1,1 @@
+render :partial => "shift.json.jb", :locals => { :shift => @shift }

@@ -1,0 +1,3 @@
+@shifts.map do |shift|
+  render :partial => "shift.json.jb", :locals => { :shift => shift }
+end
