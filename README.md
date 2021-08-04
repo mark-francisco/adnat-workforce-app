@@ -3,7 +3,9 @@
 ## Requirements:
 
 ```
-Ruby 3.0.0 and Rails 6.1.3
+Ruby 3.0.0
+Rails 6.1.3
+PostgreSQL or relational db equivalent
 ```
 
 ## Instructions:
@@ -14,19 +16,27 @@ Ruby 3.0.0 and Rails 6.1.3
 bundle install
 ```
 
+### Set up local db:
+
+```
+rails db:create
+rails db:migrate
+rails db:seed
+```
+
 ### Start server:
 
 ```
 rails s
 ```
 
-### Navigate to Rails app in browser. Go to this URL:
+### Verify that the Rails app is running by going to this URL:
 
 ```
 http://localhost:3000/
 ```
 
-### Navigate to Vue app in browser. Go to this URL:
+### Navigate to Vue app in browser by going to this URL:
 
 ```
 http://localhost:8080/
