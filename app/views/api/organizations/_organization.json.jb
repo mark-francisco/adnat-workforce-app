@@ -2,5 +2,8 @@
   :id => organization.id,
   :name => organization.name,
   :hourly_rate => organization.hourly_rate,
-  :shifts => organization.shifts,
+  :shifts => organization.shifts.map do |shift|
+    render :partial => "/api/shifts/shift", :locals => { :shift => shift }
+  end,
+
 }
