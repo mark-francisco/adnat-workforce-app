@@ -30,6 +30,10 @@ class Api::UsersController < ApplicationController
     @user.name = params[:name] || @user.name
     @user.email_address = params[:email_address] || @user.email_address
 
+    if params[:clear_shifts]
+      @user.shifts.destroy_all
+    end
+
     if @user.save
       render "show.json.jb"
     else

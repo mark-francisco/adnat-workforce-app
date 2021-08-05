@@ -1,4 +1,6 @@
 class Api::OrganizationsController < ApplicationController
+  before_action :authenticate_user
+
   def index
     @organizations = Organization.all
     render "index.json.jb"
@@ -37,6 +39,9 @@ class Api::OrganizationsController < ApplicationController
   def destroy
     @organization = Organization.find_by(:id => params[:id])
 
+    @organization.users.each { |user|
+      user.shifts.destroy_all
+    }
     @organization.destroy
     render :json => { :message => "Organization was destroyed." }
   end
