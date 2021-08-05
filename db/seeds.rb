@@ -17,4 +17,4 @@ users = User.create!([
 ])
 
 shift1 = Shift.create!(:user_id => users.first.id, :start => DateTime.parse("2021-08-01 10:00"), :finish => DateTime.parse("2021-08-01 18:00"), :break_length => 30)
-shift2 = Shift.create!(:user_id => users.second.id, :start => DateTime.parse("2021-08-02 07:00"), :finish => DateTime.parse("2021-08-02 16:00"), :break_length => 60)
+shift2 = Shift.create!(:user_id => users.first.id, :start => DateTime.parse("2021-08-02 07:00"), :finish => DateTime.parse("2021-08-02 16:00"), :break_length => 60)

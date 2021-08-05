@@ -1,4 +1,6 @@
 class Api::UsersController < ApplicationController
+  include BCrypt
+
   def create
     user = User.new(
       :name => params[:name],
@@ -29,8 +31,11 @@ class Api::UsersController < ApplicationController
     @user.organization_id = params[:organization_id] || @user.organization_id
     @user.name = params[:name] || @user.name
     @user.email_address = params[:email_address] || @user.email_address
-    @user.password = params[:password] || @user.password
-    @user.password_confirmation = params[:password_confirmation] || @user.password_confirmation
+
+    if params[:password] && params[:password_confirmation]
+      @user.password = params[:password]
+      @user.password_confirmation = params[:password_confirmation]
+    end
 
     if params[:clear_shifts]
       @user.shifts.destroy_all
