@@ -4,4 +4,5 @@
   :name => user.name,
   :email_address => user.email_address,
   :password_digest => user.password_digest,
+  :current_user => current_user,
 }
