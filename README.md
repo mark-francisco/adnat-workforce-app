@@ -8,6 +8,8 @@ Rails 6.1.3
 PostgreSQL or relational db equivalent
 ```
 
+## Note: There is a Rails app (backend) and a Vue app (frontend)
+
 ## Instructions:
 
 ### Install Ruby gems:
@@ -16,7 +18,7 @@ PostgreSQL or relational db equivalent
 bundle install
 ```
 
-### Set up local db:
+### Set up db on local machine:
 
 ```
 rails db:create
@@ -24,7 +26,7 @@ rails db:migrate
 rails db:seed
 ```
 
-### Start server:
+### Start Rails backend server:
 
 ```
 rails s
@@ -42,7 +44,7 @@ rails s -p 3000
 http://localhost:3000/
 ```
 
-### Start Vue server. Go to the Vue project's directory in the terminal and run:
+### Start Vue server. Go to Vue project directory in the terminal and run:
 
 ```
 npm run serve
@@ -60,7 +62,7 @@ npm run serve -- --port 8080
 http://localhost:8080/
 ```
 
-### Log in:
+### Log in with these credentials (or you can make your own account):
 
 ```
 email: test@example.com
